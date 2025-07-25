@@ -42,9 +42,9 @@ public class SurvivalGameManager : MonoBehaviour
     public Button eventConfirmButton;                   //이벤트 닫기(확인) 버튼 
 
     //런타임 데이터
-    private int[] memberHealth;
-    private int[] memberHunger;
-    private int[] memberBodyTemp;
+    public int[] memberHealth;
+    public int[] memberHunger;
+    public int[] memberBodyTemp;
 
     void Start()
     {
@@ -89,7 +89,7 @@ public class SurvivalGameManager : MonoBehaviour
         }
     }
 
-    void UpdateUI()
+    public void UpdateUI()
     {
         dayText.text = $"Day {currentDay}";
 
